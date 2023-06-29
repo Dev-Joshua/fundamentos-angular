@@ -1,1 +1,9 @@
-<p>Aqui va un empleado</p>
+<p>Nombre: {{ nombre }}</p>
+<p>Apellido: {{ apellido }}</p>
+<p>Edad: {{ edad < 18 ? "Menor de edad" : "Mayor de edad" }}</p>
+<p>Empresa: {{ empresa }}</p>
+<!-- <p>Edad: {{ getEdad() + 3 }}</p> -->
+
+<!-- Inserto texto dinamico desde el component.ts con interpolacion
+     En la interpolacion podemos usar expresiones +,-,*,/
+-->
