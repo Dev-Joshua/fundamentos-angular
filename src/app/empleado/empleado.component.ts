@@ -10,11 +10,13 @@ export class EmpleadoComponent {
   apellido = 'Díaz';
   edad = 25;
   // private edad = 25;
-  empresa = 'Liverpool';
+  // empresa = 'Liverpool';
 
   // getEdad() {
   //   return this.edad;
   // }
+
+  llamarEmpresa(value: string) {}
 }
 
 // Puedo agregar un modificacion de acceso private para que solamente pueda ser leido desde la misma clase

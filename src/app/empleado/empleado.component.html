@@ -1,9 +1,18 @@
 <p>Nombre: {{ nombre }}</p>
 <p>Apellido: {{ apellido }}</p>
 <p>Edad: {{ edad < 18 ? "Menor de edad" : "Mayor de edad" }}</p>
-<p>Empresa: {{ empresa }}</p>
+<p>Empresa: {{ empresa.value }}</p>
+Introduce la empresa: <input type="text" #empresa />
+<input type="button" value="Insertar" (click)="llamarEmpresa(empresa.value)" />
+
+<p>Ciudad: {{ ciudad.value }}</p>
+Introduce la ciudad: <input type="text" #ciudad (keyup)="(0)" />
 <!-- <p>Edad: {{ getEdad() + 3 }}</p> -->
 
 <!-- Inserto texto dinamico desde el component.ts con interpolacion
-     En la interpolacion podemos usar expresiones +,-,*,/
+     En la interpolacion podemos usar expresiones +,-,*,/, e incluso podemos insertar expresiones
+     condicionales con el operador ternario.
+
+     El simbolo # se usa en un template html para declarar una variable que identifica al objeto cuadro de texto.
+     Mediante eventos como click o keyup podemos mostrar el valor ingresado en el input.
 -->
